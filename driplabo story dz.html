@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>driplabo story dz</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#0a0a0c;--card:#141418;--line:#26262d;--tx:#f3f1ec;--mu:#9a9aa5;--ac:#c9a86a;--ac2:#e6cf9d;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:'Tajawal','Inter',system-ui,sans-serif;line-height:1.5}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:14px 18px;background:rgba(10,10,12,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.logo{font-weight:700;font-size:20px;letter-spacing:.5px;color:var(--ac2)}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+button,.btn{font:inherit;cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--tx);padding:8px 14px;border-radius:999px;text-decoration:none;display:inline-block}
+button:hover,.btn:hover{border-color:var(--ac)}
+.pri{background:linear-gradient(135deg,var(--ac),var(--ac2));color:#16130b;border:0;font-weight:700}
+.hero{padding:56px 20px 36px;text-align:center;background:radial-gradient(ellipse at top,#1d1a12 0,transparent 65%)}
+.hero h1{margin:0 0 8px;font-size:clamp(30px,7vw,52px);letter-spacing:.5px}
+.hero p{margin:0;color:var(--mu)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px;padding:18px;max-width:1100px;margin:auto}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.ph{aspect-ratio:3/4;background:linear-gradient(160deg,#23201a,#111115);display:flex;align-items:center;justify-content:center;font-size:44px;color:var(--ac);overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover}
+.info{padding:12px;display:flex;flex-direction:column;gap:8px;flex:1}
+.nm{font-weight:500}.pr{color:var(--ac2);font-weight:700}
+.info button{margin-top:auto}
+.wrap{max-width:760px;margin:auto;padding:18px}
+input{font:inherit;background:#0f0f13;color:var(--tx);border:1px solid var(--line);border-radius:12px;padding:10px 12px;width:100%}
+label{display:block;color:var(--mu);font-size:13px;margin:10px 0 4px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:16px}
+.item{display:flex;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
+.item:last-child{border:0}.item .t{width:52px;height:64px;border-radius:10px;background:#1b1b21;overflow:hidden;flex:none;display:flex;align-items:center;justify-content:center;color:var(--ac)}
+.item .t img{width:100%;height:100%;object-fit:cover}.item input{flex:1;min-width:0}.item .p{width:90px;flex:none}
+.drawer{position:fixed;inset:0;z-index:9;background:rgba(0,0,0,.6);display:flex;justify-content:flex-end}
+.panel{width:min(400px,100%);height:100%;background:var(--bg);border-inline-start:1px solid var(--line);padding:18px;padding-top:calc(18px + env(safe-area-inset-top,0px));overflow:auto}
+.muted{color:var(--mu)}.tot{display:flex;justify-content:space-between;font-weight:700;font-size:18px;margin:16px 0}
+.note{color:var(--mu);text-align:center;padding:40px 20px}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script id="data" type="application/json">{"name":"driplabo story dz","wa":"2130773821903","cur":"DA","code":"islam220011","products":[{"id":"p1793282758610","name":"Bepe","price":25000,"img":""}]}</script>
+<script>
+const S=JSON.parse(document.getElementById('data').textContent);
+const L={ar:{tag:'أناقة عصرية بتفاصيل مميزة',add:'أضف للسلة',cart:'السلة',empty:'السلة فارغة',total:'المجموع',order:'اطلب عبر واتساب',send:'أرسل الطلب للمتجر',yn:'اسمك',yp:'رقم هاتفك',sentok:'تم إرسال طلبك! سنتصل بك قريبا.',lock:'أدخل كود الإدارة',go:'دخول',bad:'الكود غير صحيح',code:'كود الإدارة (يمكنك تغييره)',ords:'الطلبات',noord:'لا توجد طلبات بعد.',nowa:'صاحب المتجر لم يضف رقم واتساب بعد.',none:'لا توجد منتجات حاليا.',admin:'الإدارة',shop:'المتجر',close:'إغلاق',only:'هذه الصفحة خاصة بصاحب المتجر. افتح الرابط وأنت داخل بحساب Claude اللي صنعت بيه المتجر.',store:'اسم المتجر',wa:'رقم واتساب لاستقبال الطلبات (مع رمز الدولة، بدون +، مثال: 213555123456)',cur:'العملة',newp:'منتج جديد',pn:'اسم المنتج',pp:'السعر',img:'صورة المنتج',addp:'إضافة المنتج',prods:'المنتجات',del:'حذف',pub:'نشر التغييرات',pubd:'جار النشر...',hint:'بعد الضغط على نشر، تظهر التغييرات للزبائن مباشرة.',hi:'مرحبا، أريد طلب:'},en:{tag:'Modern elegance, refined details',add:'Add to cart',cart:'Cart',empty:'Your cart is empty',total:'Total',order:'Order via WhatsApp',send:'Send order to the store',yn:'Your name',yp:'Your phone number',sentok:'Your order was sent! We will contact you soon.',lock:'Enter admin code',go:'Enter',bad:'Wrong code',code:'Admin code (you can change it)',ords:'Orders',noord:'No orders yet.',nowa:'The store owner has not added a WhatsApp number yet.',none:'No products yet.',admin:'Admin',shop:'Shop',close:'Close',only:'This page is for the store owner. Open it while signed in to the Claude account that created the store.',store:'Store name',wa:'Your WhatsApp number for orders (country code, no +, e.g. 213555123456)',cur:'Currency',newp:'New product',pn:'Product name',pp:'Price',img:'Product image',addp:'Add product',prods:'Products',del:'Delete',pub:'Publish changes',pubd:'Publishing...',hint:'After publishing, customers see the changes right away.',hi:'Hello, I would like to order:'}};
+let lang='ar',view=location.hash==='#admin'?'admin':'shop',owner=false,cart={},open=false,draftImg='',db=null,orders=[],unlocked=false,sent=false;
+try{lang=localStorage.getItem('lang')||'ar'}catch(e){}
+const t=k=>L[lang][k];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const $=id=>document.getElementById(id);
+const money=n=>n+' '+esc(S.cur);
+function ph(p){return p.img?'<img src="'+p.img+'" alt="">':'<span>'+esc((p.name||'?')[0])+'</span>'}
+function render(){
+ const d=document.documentElement;d.lang=lang;d.dir=lang==='ar'?'rtl':'ltr';
+ let h='<header><div class="logo">'+esc(S.name)+'</div><div class="row">';
+ if(owner)h+='<button id="nav">'+(view==='admin'?t('shop'):t('admin'))+'</button>';
+ h+='<button id="lg">'+(lang==='ar'?'EN':'عربي')+'</button>';
+ if(view==='shop')h+='<button class="pri" id="ct">'+t('cart')+' ('+Object.values(cart).reduce((a,b)=>a+b,0)+')</button>';
+ h+='</div></header>';
+ h+=view==='admin'?adminView():shopView();
+ if(view==='shop')h+='<footer style="text-align:center;padding:28px"><a href="#admin" id="fa" style="color:var(--mu);opacity:.5;font-size:12px">'+t('admin')+'</a></footer>';
+ if(open&&view==='shop')h+=drawer();
+ $('app').innerHTML=h;wire();
+}
+function shopView(){
+ let h='<section class="hero"><h1>'+esc(S.name)+'</h1><p>'+t('tag')+'</p></section>';
+ if(!S.products.length)return h+'<div class="note">'+t('none')+'</div>';
+ h+='<div class="grid">';
+ S.products.forEach(p=>{h+='<div class="card"><div class="ph">'+ph(p)+'</div><div class="info"><div class="nm">'+esc(p.name)+'</div><div class="pr">'+money(p.price)+'</div><button data-add="'+p.id+'">'+t('add')+'</button></div></div>'});
+ return h+'</div>';
+}
+function drawer(){
+ const ids=Object.keys(cart).filter(i=>cart[i]>0);let tot=0;
+ let h='<div class="drawer" id="dr"><div class="panel"><div class="row" style="justify-content:space-between"><h2 style="margin:0">'+t('cart')+'</h2><button id="cl">'+t('close')+'</button></div>';
+ if(sent)h+='<p class="pr">'+t('sentok')+'</p>';
+ if(!ids.length&&!sent)h+='<p class="muted">'+t('empty')+'</p>';
+ let msg=t('hi')+'\n';
+ ids.forEach(i=>{const p=S.products.find(x=>x.id===i);if(!p)return;tot+=p.price*cart[i];msg+='- '+p.name+' x'+cart[i]+' ('+p.price*cart[i]+' '+S.cur+')\n';
+  h+='<div class="item"><div class="t">'+ph(p)+'</div><div style="flex:1"><div>'+esc(p.name)+'</div><div class="pr">'+money(p.price)+'</div></div><div class="row"><button data-m="'+i+'">-</button><b>'+cart[i]+'</b><button data-p="'+i+'">+</button></div></div>'});
+ if(ids.length){msg+=t('total')+': '+tot+' '+S.cur;
+  h+='<div class="tot"><span>'+t('total')+'</span><span>'+money(tot)+'</span></div>';if(db)h+='<input id="yn" placeholder="'+t('yn')+'" style="margin-bottom:8px"><input id="yp" inputmode="tel" placeholder="'+t('yp')+'" style="margin-bottom:8px"><button class="pri" id="snd" style="width:100%;margin-bottom:8px">'+t('send')+'</button>';
+  const ph0=String(S.wa).replace(/\D/g,'');h+=ph0?'<a class="btn pri" style="width:100%;text-align:center" target="_blank" rel="noopener" href="https://wa.me/'+ph0+'?text='+encodeURIComponent(msg)+'">'+t('order')+'</a>':'<p class="muted">'+t('nowa')+'</p>';}
+ return h+'</div></div>';
+}
+function adminView(){
+ if(!unlocked)return '<div class="wrap"><div class="box"><label>'+t('lock')+'</label><input id="ci" type="password"><div style="margin-top:12px"><button class="pri" id="cg">'+t('go')+'</button> <span id="ce" class="muted"></span></div></div></div>';
+ if(!owner)return '<div class="note">'+t('only')+'</div>';
+ let h='<div class="wrap"><div class="box"><label>'+t('store')+'</label><input id="sn" value="'+esc(S.name)+'"><label>'+t('wa')+'</label><input id="sw" inputmode="numeric" value="'+esc(S.wa)+'"><label>'+t('cur')+'</label><input id="sc" value="'+esc(S.cur)+'"><label>'+t('code')+'</label><input id="sk" value="'+esc(S.code)+'"></div>';
+ h+='<div class="box"><h3 style="margin-top:0">'+t('newp')+'</h3><label>'+t('pn')+'</label><input id="np"><label>'+t('pp')+'</label><input id="npr" type="number" inputmode="decimal"><label>'+t('img')+'</label><input id="nf" type="file" accept="image/*"><div style="margin-top:12px"><button class="pri" id="ap">'+t('addp')+'</button></div></div>';
+ h+='<div class="box"><h3 style="margin-top:0">'+t('prods')+'</h3>';
+ S.products.forEach(p=>{h+='<div class="item"><div class="t">'+ph(p)+'</div><input data-n="'+p.id+'" value="'+esc(p.name)+'"><input class="p" type="number" data-pr="'+p.id+'" value="'+p.price+'"><button data-d="'+p.id+'">'+t('del')+'</button></div>'});
+ h+='</div><p class="muted">'+t('hint')+'</p><button class="pri" id="pb" style="width:100%;padding:14px">'+t('pub')+'</button></div>';
+ return h;
+}
+function wire(){
+ const on=(id,f)=>{const e=$(id);if(e)e.onclick=f};
+ on('lg',()=>{lang=lang==='ar'?'en':'ar';try{localStorage.setItem('lang',lang)}catch(e){}render()});
+ on('ct',()=>{open=true;sent=false;render()});on('cl',()=>{open=false;render()});on('fa',e=>{e.preventDefault();view='admin';location.hash='admin';render()});
+ on('snd',async()=>{const n=$('yn').value.trim(),p=$('yp').value.trim();if(!n||!p)return;const items=Object.keys(cart).filter(i=>cart[i]>0).map(i=>{const q=S.products.find(x=>x.id===i);return q?{n:q.name,q:cart[i],pr:q.price}:null}).filter(Boolean);const tot=items.reduce((a,b)=>a+b.q*b.pr,0);try{const u=await claude.use('user'),id=await u.id(),ref=db.doc('orders/'+id),sn=await ref.get(),prev=sn.exists?(sn.data().list||[]):[];await ref.set({list:[...prev,{name:n,phone:p,items,total:tot,cur:S.cur,ts:Date.now()}]});cart={};sent=true;render()}catch(e){$('snd').textContent='✗'}});
+ on('nav',()=>{view=view==='admin'?'shop':'admin';location.hash=view==='admin'?'admin':'';render()});
+ document.querySelectorAll('[data-add]').forEach(b=>b.onclick=()=>{cart[b.dataset.add]=(cart[b.dataset.add]||0)+1;render()});
+ document.querySelectorAll('[data-p]').forEach(b=>b.onclick=()=>{cart[b.dataset.p]++;render()});
+ document.querySelectorAll('[data-m]').forEach(b=>b.onclick=()=>{cart[b.dataset.m]--;render()});
+ const dr=$('dr');if(dr)dr.onclick=e=>{if(e.target===dr){open=false;render()}};
+ on('cg',()=>{if($('ci').value===S.code){unlocked=true;render()}else $('ce').textContent=t('bad')});
+ if(view!=='admin'||!owner||!unlocked)return;
+ ['sn','sw','sc','sk'].forEach((id,i)=>$(id).oninput=e=>{S[['name','wa','cur','code'][i]]=e.target.value});
+ document.querySelectorAll('[data-n]').forEach(e=>e.oninput=()=>{S.products.find(p=>p.id===e.dataset.n).name=e.value});
+ document.querySelectorAll('[data-pr]').forEach(e=>e.oninput=()=>{S.products.find(p=>p.id===e.dataset.pr).price=Number(e.value)||0});
+ document.querySelectorAll('[data-d]').forEach(b=>b.onclick=()=>{S.products=S.products.filter(p=>p.id!==b.dataset.d);render()});
+ $('nf').onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{const i=new Image();i.onload=()=>{const k=Math.min(1,640/Math.max(i.width,i.height)),c=document.createElement('canvas');c.width=i.width*k;c.height=i.height*k;c.getContext('2d').drawImage(i,0,0,c.width,c.height);draftImg=c.toDataURL('image/jpeg',.8)};i.src=r.result};r.readAsDataURL(f)};
+ on('ap',()=>{const n=$('np').value.trim();if(!n)return;S.products.push({id:'p'+Date.now(),name:n,price:Number($('npr').value)||0,img:draftImg});draftImg='';render()});
+ on('pb',async()=>{const b=$('pb');b.textContent=t('pubd');try{const a=await claude.use('artifact');if(!a)throw 0;
+  const c=document.documentElement.cloneNode(true);c.querySelector('#data').textContent=JSON.stringify(S).replace(/</g,'\\u003c');c.querySelector('#app').innerHTML='';
+  await a.publish('<!doctype html>\n'+c.outerHTML)}catch(e){b.textContent=t('pub')}});
+}
+render();
+(async()=>{try{const u=await claude.use('user');owner=!!(u&&u.isOwner());if(owner)render()}catch(e){}try{db=await claude.use('db');if(db){render();if(owner)db.collection('orders').onSnapshot(s=>{orders=s.docs.flatMap(d=>d.data().list||[]).sort((a,b)=>b.ts-a.ts);if(view==='admin'&&unlocked&&document.activeElement.tagName!=='INPUT')render()})}}catch(e){}})();
+</script>
+
+
+</body></html>
